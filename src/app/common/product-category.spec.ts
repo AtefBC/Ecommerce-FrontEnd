@@ -5,3 +5,4 @@ describe('ProductCategory', () => {
     expect(new ProductCategory()).toBeTruthy();
   });
 });
+
