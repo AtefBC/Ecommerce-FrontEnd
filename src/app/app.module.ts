@@ -8,7 +8,7 @@ import { ProductService } from './services/product.service';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { SearchComponent } from './components/search/search.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 //routing
 const routes: Routes = [
@@ -35,7 +35,9 @@ const routes: Routes = [
     //root module
     RouterModule.forRoot(routes),
     HttpClientModule,
-    BrowserModule
+    BrowserModule,
+    NgbModule
+
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
