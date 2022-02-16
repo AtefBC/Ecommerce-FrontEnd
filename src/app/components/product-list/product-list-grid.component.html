@@ -1,3 +1,4 @@
+
 <div class="main-content">
     <div class="section-content section-content-p30">
         <div class="container-fluid">
@@ -11,7 +12,7 @@
                         </a>
                         <h1>{{ tempProduct.name }}</h1>
                         <div class="price">{{ tempProduct.unitPrice | currency: 'USD' }}</div>
-                        <a href="#" class="primary-btn">Add to cart</a>
+                        <button (click)="addToCart(tempProduct)" class="btn btn-primary btn-sm">Add to cart</button>
                     </div>
                 </div>
 

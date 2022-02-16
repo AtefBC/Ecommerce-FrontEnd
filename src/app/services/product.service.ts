@@ -51,7 +51,7 @@ export class ProductService {
     theKeyword: string): Observable<GetResponseProduct> {
     //need to build URL based on the CategoryId
     const searchUrl = `${this.baseUrl}/search/findByNameContaining?name=${theKeyword}`
-      + `&page=${thePage}&size=${thePageSize}`;
+                      + `&page=${thePage}&size=${thePageSize}`;
     return this.httpClient.get<GetResponseProduct>(searchUrl);
   }
 
